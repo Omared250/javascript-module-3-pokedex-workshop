@@ -6,15 +6,19 @@ async function getAllPokemon() {
     return results;
 }
 
+async function getOnePokemon(term) {
+    const url = `https://pokeapi.co/api/v2/pokemon/${term}`; 
+    
+    const response = await fetch(url);
+    const result = await response.json();
+    return result;
+}
+
 async function getOnePokemonSprite (url) {
 
     const response = await fetch(url);
     const { sprites } = await response.json();
-    return sprites.front_shiny;
-    //console.log("Here I will be returning a sprite from  my Pokemon");
-
-    // fetch the response from url
-    // return one of the sprites we get
+    return sprites.front_default;
 }
 
-export { getAllPokemon, getOnePokemonSprite };
+export { getAllPokemon, getOnePokemonSprite, getOnePokemon };
