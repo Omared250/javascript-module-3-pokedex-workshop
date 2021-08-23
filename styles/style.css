@@ -1,0 +1,47 @@
+/* * {
+    border: 1px solid black
+} */
+
+/* General setup */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* template for each pokemon */
+
+.templates {
+    display: flex;
+    margin-top: 1em;
+    width: 10em;
+    height: 10em;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid black
+}
+
+.templates:hover {
+    transform: scale(1.05);
+}
+
+.templates img {
+    width: 42%;
+    margin: auto;
+}
+
+.templates a {
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(16, 7, 19);
+    font-weight: 700;
+}
+
+/* search bar steup */
+
+.searchbar {
+    width: 50%;
+    margin: auto;
+}

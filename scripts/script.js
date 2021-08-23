@@ -15,6 +15,7 @@ function createPokemonLink(name, url) {
 
 async function createPokemon(name, url) {
     const newPokemon = document.createElement('div');
+    newPokemon.classList.add('templates');
     newPokemon.appendChild(await creatPokemonImage(url));
     newPokemon.appendChild(document.createElement('br'));
     newPokemon.appendChild(createPokemonLink(name, url));
@@ -34,6 +35,7 @@ function searchPokemon(event) {
 
 function createSearchField() {
     const searchField = document.createElement("input")
+    searchField.classList.add('searchbar');
     searchField.type="text"
     searchField.placeholder="Search"
     searchField.addEventListener("keyup", searchPokemon)

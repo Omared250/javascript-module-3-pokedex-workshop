@@ -18,7 +18,7 @@ async function getOnePokemonSprite (url) {
 
     const response = await fetch(url);
     const { sprites } = await response.json();
-    return sprites.front_default;
+    return sprites.other.dream_world.front_default;
 }
 
 export { getAllPokemon, getOnePokemonSprite, getOnePokemon };
