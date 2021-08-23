@@ -5,8 +5,12 @@
 /* General setup */
 
 body {
+    width: 80%;
+    margin: 2em auto 2em auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
